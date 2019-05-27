@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Leonardo Tavares (Design) & Guilherme França (JavaScript)">
+	<meta name="application-name" content="Exercícios das aulas - da melhor forma." />
+	<meta name="description" content="Exercícios da aula da professora Fernanda aplicados em JavaScript, tendo como orientador o Professor Leonardo Villani">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/w3css.css">
+	<script src="js/index.js"></script>
+	<script src="js/exercicios.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+	<title>Exercícios de Algoritmo</title>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">INÍCIO</a>
+    <a href="#exercises" class="w3-bar-item w3-button w3-padding-large w3-hide-small">EXERCÍCIOS</a>
+  </div>
+</div>
+<!-- Page content -->
+<div class="w3-content" style="max-width:1500px;margin-top:46px">
+
+	<!-- Exercícios -->
+	<div class="w3-container w3-content" style="max-width:1200px;" id="exercises">
+		<!-- Título -->
+		<nav class="w3-container w3-center">
+			<h2 class="w3-wide">Exercícios</h2>
+	    	<p class="w3-opacity"><i>TP's realizados com a professora Fernanda, agora aplicados em JavaScript.</i></p>
+    	</nav>
+    	<!-- Navegação -->
+    	<div class="w3-container" style="margin-top: 5px; padding-left: 3%;">
+    		<p class="w3-card w3-center controlSection" onclick="showSections()"> Expandir Tudo</p>
+    		<p class="w3-card w3-center controlSection" onclick="hideSections()"> Recolher Tudo</p>
+    	</div>
+    	<!-- Quadrado com os execícios -->
+    	<div class="w3-container w3-card">
+    		<!-- LISTA 1 -->
+	    	<h4 class="w3-border-bottom w3-border-light-grey w3-padding-16" onclick="changeSection('atividade1')">TP1</h4>
+	    	<div id="atividade1" class="w3-show">
+	    		<!-- Linha 1-->
+			  	<div>
+			    	<div class="exercisesColumn">
+			      		<div class="w3-display-container exercisesBox">
+			      			<div class="exercisesTitle w3-center"><h5>Exercício 1</h5></div>
+			      			<h3 class=" w3-display-middle w3-center w3-wide">Equação 2º Grau</h3>
+			      			<label onclick="openModal('l1ex1')" class="view w3-display-bottommiddle" style="width: 100%;">Visualizar</label>
+			      		</div>
+			    	</div>
+			    	<div class="exercisesColumn">
+			      		<div class="w3-display-container exercisesBox">
+			      			<div class="exercisesTitle w3-center"><h5>Exercício 2</h5></div>
+			      			<h3 class=" w3-display-middle w3-center w3-wide">Média Ponderada</h3>
+			      			<label onclick="openModal('l1ex2')" class="view w3-display-bottommiddle" style="width: 100%;">Visualizar</label>
+			      		</div>
+			    	</div>
+			    	<div class="exercisesColumn">
+			      		<div class="w3-display-container exercisesBox">
+			      			<div class="exercisesTitle w3-center"><h5>Exercício 3</h5></div>
+			      			<h3 class=" w3-display-middle w3-center w3-wide">Ordem Crescente</h3>
+			      			<label onclick="openModal('l1ex3')" class="view w3-display-bottommiddle" style="width: 100%;">Visualizar</label>
+			      		</div>
+			    	</div>
+			    	<div class="exercisesColumn">
+			      		<div class="w3-display-container exercisesBox">
+			      			<div class="exercisesTitle w3-center"><h5>Exercício 4</h5></div>
+			      			<h3 class=" w3-display-middle w3-center w3-wide">Data cronológica</h3>
+			      			<label onclick="openModal('l1ex4')" class="view w3-display-bottommiddle" style="width: 100%;">Visualizar</label>
+			      		</div>
+			    	</div>
+			    	<div class="exercisesColumn">
+			      		<div class="w3-display-container exercisesBox">
+			      			<div class="exercisesTitle w3-center"><h5>Exercício 5</h5></div>
+			      			<h3 class=" w3-display-middle w3-center w3-wide">Soma e Raiz</h3>
+			      			<label onclick="openModal('l1ex5')" class="view w3-display-bottommiddle" style="width: 100%;">Visualizar</label>
+			      		</div>
+			    	</div>
+			    </div>
+			    <!-- Linha 2 aqui (se necessário) -->
+		    </div>
+		    <!-- LISTA 2 -->
+	    	<h4 class="w3-border-bottom w3-border-light-grey w3-padding-16" onclick="changeSection('atividade2')">TP2</h4>
+	    	<div id="atividade2" class="w3-show">
+	    		<!-- Linha 1-->
+			  	<div>
+			    	<div class="exercisesColumn">
+			      		<div class="w3-display-container exercisesBox">
+			      			<div class="exercisesTitle w3-center"><h5>Exercício 1</h5></div>
+			      			<h3 class=" w3-display-middle w3-center w3-wide">Salário Bonificado</h3>
+			      			<label onclick="openModal('l2ex1')" class="view w3-display-bottommiddle" style="width: 100%;">Visualizar</label>
+			      		</div>
+			    	</div>
+			    	<div class="exercisesColumn">
+			      		<div class="w3-display-container exercisesBox">
+			      			<div class="exercisesTitle w3-center"><h5>Exercício 2</h5></div>
+			      			<h3 class=" w3-display-middle w3-center w3-wide">Número Primo</h3>
+			      			<label onclick="openModal('l2ex2')" class="view w3-display-bottommiddle" style="width: 100%;">Visualizar</label>
+			      		</div>
+			    	</div>
+			    	<div class="exercisesColumn">
+			      		<div class="w3-display-container exercisesBox">
+			      			<div class="exercisesTitle w3-center"><h5>Exercício 3</h5></div>
+			      			<h3 class=" w3-display-middle w3-center w3-wide">Fibonacci</h3>
+			      			<label onclick="openModal('l2ex3')" class="view w3-display-bottommiddle" style="width: 100%;">Visualizar</label>
+			      		</div>
+			    	</div>
+			    	<div class="exercisesColumn">
+			      		<div class="w3-display-container exercisesBox">
+			      			<div class="exercisesTitle w3-center"><h5>Exercício 4</h5></div>
+			      			<h4 class=" w3-display-middle w3-center w3-wide">Estoque de Vinhos</h4>
+			      			<label onclick="openModal('l2ex4')" class="view w3-display-bottommiddle" style="width: 100%;">Visualizar</label>
+			      		</div>
+			    	</div>
+			    	<div class="exercisesColumn">
+			      		<div class="w3-display-container exercisesBox">
+			      			<div class="exercisesTitle w3-center"><h5>Exercício 5</h5></div>
+			      			<h3 class=" w3-display-middle w3-center w3-wide">Fatorial</h3>
+			      			<label onclick="openModal('l2ex5')" class="view w3-display-bottommiddle" style="width: 100%;">Visualizar</label>
+			      		</div>
+			    	</div>	
+
+			    </div>
+			    <!-- Linha 2 aqui (se necessário) -->
+		    </div>
+		    <!-- LISTA 3 -->
+	    	<h4 class="w3-border-bottom w3-border-light-grey w3-padding-16" onclick="changeSection('atividade3')">TP3</h4>
+	    	<div id="atividade3" class="w3-show">
+	    		<!-- Linha 1-->
+			  	<div>
+			    	<div class="exercisesColumn">
+			      		<div class="w3-display-container exercisesBox">
+			      			<div class="exercisesTitle w3-center"><h5>Exercício 1</h5></div>
+			      			<h3 class=" w3-display-middle w3-center w3-wide">Positivos e Negativos</h3>
+			      			<label onclick="openModal('l3ex1')" class="view w3-display-bottommiddle" style="width: 100%;">Visualizar</label>
+			      		</div>
+			    	</div>
+			    	<div class="exercisesColumn">
+			      		<div class="w3-display-container exercisesBox">
+			      			<div class="exercisesTitle w3-center"><h5>Exercício 2</h5></div>
+			      			<h3 class=" w3-display-middle w3-center w3-wide">Números Maiores que 50</h3>
+			      			<label onclick="openModal('l3ex2')" class="view w3-display-bottommiddle" style="width: 100%;">Visualizar</label>
+			      		</div>
+			    	</div>
+			    	<div class="exercisesColumn">
+			      		<div class="w3-display-container exercisesBox">
+			      			<div class="exercisesTitle w3-center"><h5>Exercício 3</h5></div>
+			      			<h3 class=" w3-display-middle w3-center w3-wide">Números Pares e Ímpares</h3>
+			      			<label onclick="openModal('l3ex3')" class="view w3-display-bottommiddle" style="width: 100%;">Visualizar</label>
+			      		</div>
+			    	</div>
+			    	<div class="exercisesColumn">
+			      		<div class="w3-display-container exercisesBox">
+			      			<div class="exercisesTitle w3-center"><h5>Exercício 4</h5></div>
+			      			<h3 class=" w3-display-middle w3-center w3-wide">Ordenando Vetores</h3>
+			      			<label onclick="openModal('l3ex4')" class="view w3-display-bottommiddle" style="width: 100%;">Visualizar</label>
+			      		</div>
+			    	</div>
+			    	<div class="exercisesColumn">
+			      		<div class="w3-display-container exercisesBox">
+			      			<div class="exercisesTitle w3-center"><h5>Exercício 5</h5></div>
+			      			<h3 class=" w3-display-middle w3-center w3-wide">Números Iguais ao Último</h3>
+			      			<label onclick="openModal('l3ex5')" class="view w3-display-bottommiddle" style="width: 100%;">Visualizar</label>
+			      		</div>
+			    	</div>
+			    </div>
+			    <!-- Linha 2 aqui (se necessário) -->
+		    </div>
+	    </div>
+	    <!-- Fim do quadrado -->
+   	</div>
+   	<!-- Fim da div Exercícios, coisas abaixo deles, colocar aqui -->	
+</div>
+<!-- Fim do page content, a partir daqui os MODAIS contendo exercícios -->
+<!-- Lista 1 ex1 -->
+<div id="l1ex1" class="w3-modal">
+    <div class="w3-modal-content w3-card-3 w3-animate-bottom">
+        <header class="w3-container w3-black"> 
+        	<span onclick="document.getElementById(currentModal).style.display='none'" 
+        	class="w3-button w3-display-topright">&times;</span>
+        	<h2>Equação 2º Grau</h2>
+        </header>
+    	<div class="w3-display-container w3-padding-16" style="height: 300px;">
+    		<div class="w3-display-middle">
+	    		<label class="w3-opacity-min">Digite o 1º número: </label><input type="text" id="entradaEQ2G1"><br>
+                <label class="w3-opacity-min">Digite o 2º número: </label><input type="text" id="entradaEQ2G2"><br>
+                <label class="w3-opacity-min">Digite o 3º número: </label><input type="text" id="entradaEQ2G3"><br>
+                <p id="saidaEQ2G">Resposta: </p>
+                <p class="w3-button w3-black" style="margin-left: auto; margin-right: auto" onclick="l1ex1()">Verificar</p>
+    		</div>
+    	</div>
+    	<footer class="w3-container w3-black">
+    		<p></p>
+      	</footer>
+    </div>
+</div>
+<!-- Lista 1 ex2 -->
+<div id="l1ex2" class="w3-modal">
+    <div class="w3-modal-content w3-card-3 w3-animate-bottom">
+        <header class="w3-container w3-black"> 
+        	<span onclick="document.getElementById(currentModal).style.display='none'" 
+        	class="w3-button w3-display-topright">&times;</span>
+        	<h2>Média Ponderada</h2>
+        </header>
+    	<div class="w3-display-container w3-padding-16" style="height: 300px;">
+    		<div class="w3-display-middle">
+	    		<label class="w3-opacity-min">Digite a 1º nota: </label><input type="text" id="entradaMP1"><br>
+                <label class="w3-opacity-min">Digite a 2º nota: </label><input type="text" id="entradaMP2"><br>
+                <label class="w3-opacity-min">Digite a 3º nota: </label><input type="text" id="entradaMP3"><br>
+                <p id="saidaMP">Resposta: </p>
+                <p class="w3-button w3-black" style="margin-left: auto; margin-right: auto" onclick="l1ex2()">Calcular</p>
+    		</div>
+    	</div>
+    	<footer class="w3-container w3-black">
+    		<p></p>
+      	</footer>
+    </div>
+</div>
+<!-- Lista 1 ex3 -->
+<div id="l1ex3" class="w3-modal">
+    <div class="w3-modal-content w3-card-3 w3-animate-bottom">
+        <header class="w3-container w3-black"> 
+        	<span onclick="document.getElementById(currentModal).style.display='none'" 
+        	class="w3-button w3-display-topright">&times;</span>
+        	<h2>Ordem Crescente</h2>
+        </header>
+    	<div class="w3-display-container w3-padding-16" style="height: 300px;">
+    		<div class="w3-display-middle">
+	    		<label class="w3-opacity-min">Digite o 1º número: </label><input type="text" id="entradaOC1"><br>
+                <label class="w3-opacity-min">Digite a 2º número: </label><input type="text" id="entradaOC2"><br>
+                <label class="w3-opacity-min">Digite a 3º número: </label><input type="text" id="entradaOC3"><br>
+                <p id="saidaOC">Resposta: </p>
+                <p class="w3-button w3-black" style="margin-left: auto; margin-right: auto" onclick="l1ex3()">Calcular</p>
+    		</div>
+    	</div>
+    	<footer class="w3-container w3-black">
+    		<p></p>
+      	</footer>
+    </div>
+</div>
+<!-- Lista 1 ex4 -->
+<div id="l1ex4" class="w3-modal">
+    <div class="w3-modal-content w3-card-3 w3-animate-bottom">
+        <header class="w3-container w3-black"> 
+        	<span onclick="document.getElementById(currentModal).style.display='none'" 
+        	class="w3-button w3-display-topright">&times;</span>
+        	<h2>Data Cronológica</h2>
+        </header>
+    	<div class="w3-display-container w3-padding-16" style="height: 300px;">
+    		<div class="w3-display-middle">
+	    		<label class="w3-opacity-min">Digite o 1º ano: </label><input type="text" id="entradaDCMA1"><br>
+                <label class="w3-opacity-min">Digite o 1º mês: </label><input type="text" id="entradaDCMM1"><br>
+                <label class="w3-opacity-min">Digite o 1º dia: </label><input type="text" id="entradaDCMD1"><br>
+                <label class="w3-opacity-min">Digite o 2º ano: </label><input type="text" id="entradaDCMA2"><br>
+                <label class="w3-opacity-min">Digite o 2º mês: </label><input type="text" id="entradaDCMM2"><br>
+                <label class="w3-opacity-min">Digite o 2º dia: </label><input type="text" id="entradaDCMD2"><br>
+                <p id="saidaDCM">Resposta: </p>
+                <p class="w3-button w3-black" style="margin-left: auto; margin-right: auto" onclick="l1ex4()">Calcular</p>
+    		</div>
+    	</div>
+    	<footer class="w3-container w3-black">
+    		<p></p>
+      	</footer>
+    </div>
+</div>
+<!-- Lista 1 ex5 -->
+<div id="l1ex5" class="w3-modal">
+    <div class="w3-modal-content w3-card-3 w3-animate-bottom">
+        <header class="w3-container w3-black"> 
+        	<span onclick="document.getElementById(currentModal).style.display='none'" 
+        	class="w3-button w3-display-topright">&times;</span>
+        	<h2>Soma e Raiz</h2>
+        </header>
+    	<div class="w3-display-container w3-padding-16" style="height: 300px;">
+    		<div class="w3-display-middle">
+	    		<input type="radio" name="operacao" value="rdbSOMA" onchange="changeOperation(this)"> Soma<br>
+                <input type="radio" name="operacao" value="rdbRAIZ" onchange="changeOperation(this)"> Raiz<br>
+                <label class="w3-opacity-min" style="display: none;" id="lblRAIZ">Digite o número: </label><input type="text" style="display: none;" id="entradaRAIZ"><br>
+                <label class="w3-opacity-min" style="display: none;" id="lblSOMAR1">Digite o 1º número: </label><input type="text" style="display: none;" id="entradaSOMAR1"><br>
+                <label class="w3-opacity-min" style="display: none;" id="lblSOMAR2">Digite o 2º número: </label><input type="text" style="display: none;" id="entradaSOMAR2"><br>
+                <p id="saidaRDB">Resposta: </p>
+                <p class="w3-button w3-black" style="margin-left: auto; margin-right: auto" onclick="l1ex5()">Calcular</p>
+    		</div>
+    	</div>
+    	<footer class="w3-container w3-black">
+    		<p></p>
+      	</footer>
+    </div>
+</div>
+
+<!-- Lista 2 -->
+
+<!-- Lista 2 ex1 -->
+<div id="l2ex1" class="w3-modal">
+    <div class="w3-modal-content w3-card-3 w3-animate-bottom">
+        <header class="w3-container w3-black"> 
+        	<span onclick="document.getElementById(currentModal).style.display='none'" 
+        	class="w3-button w3-display-topright">&times;</span>
+        	<h2>Salário Bonificado</h2>
+        </header>
+    	<div class="w3-display-container w3-padding-16" style="height: 300px;">
+    		<div class="w3-display-middle">
+	    		<label class="w3-opacity-min" id="lblSal">Digite o salário: </label><input type="number" id="entradaSal" min="1"><br>
+	    		<p id="saidaSal">Resposta: </p><br>
+	    		<p class="w3-button w3-black" style="margin-left: auto; margin-right: auto" onclick="l2ex1()">Iniciar</p>
+    		</div>
+    	</div>
+    	<footer class="w3-container w3-black">
+    		<p></p>
+      	</footer>
+    </div>
+</div>
+<!-- Lista 2 ex2 -->
+<div id="l2ex2" class="w3-modal">
+    <div class="w3-modal-content w3-card-3 w3-animate-bottom">
+        <header class="w3-container w3-black"> 
+        	<span onclick="document.getElementById(currentModal).style.display='none'" 
+        	class="w3-button w3-display-topright">&times;</span>
+        	<h2>Número Primo</h2>
+        </header>
+   		<div class="w3-display-container w3-padding-16" style="height: 300px;">
+    		<div class="w3-display-middle">
+	    		<label class="w3-opacity-min">Digite um número: </label><input type="number" id="entradaPrimo" min="1"><br>
+	    		<p id="saidaPrimo">Resposta: </p><br>
+	    		<p class="w3-button w3-black" style="margin-left: auto; margin-right: auto" onclick="l2ex2()">Verificar</p>
+	   		</div>
+	   	</div>
+	   	<footer class="w3-container w3-black">
+	   		<p></p>
+	   	</footer>
+	</div>
+</div>
+<!-- Lista 2 ex3 -->
+<div id="l2ex3" class="w3-modal">
+    <div class="w3-modal-content w3-card-3 w3-animate-bottom">
+        <header class="w3-container w3-black"> 
+        	<span onclick="document.getElementById(currentModal).style.display='none'" 
+        	class="w3-button w3-display-topright">&times;</span>
+        	<h2>Fibonacci</h2>
+        </header>
+    	<div class="w3-display-container w3-padding-16" style="height: 300px;">
+    		<div class="w3-display-middle">
+	    		<label class="w3-opacity-min">Digite o número de termos: </label><input type="number" id="entradaFib" min="1"><br>
+	    		<p id="saidaFib"> </p><br>
+	    		<p class="w3-button w3-black" style="margin-left: auto; margin-right: auto" onclick="l2ex3()">Verificar</p>
+    		</div>
+    	</div>
+    	<footer class="w3-container w3-black">
+    		<p></p>
+      	</footer>
+    </div>
+</div>
+<!-- Lista 2 ex4 -->
+<div id="l2ex4" class="w3-modal">
+    <div class="w3-modal-content w3-card-3 w3-animate-bottom">
+        <header class="w3-container w3-black"> 
+        	<span onclick="document.getElementById(currentModal).style.display='none'" 
+        	class="w3-button w3-display-topright">&times;</span>
+        	<h2>Estoque de Vinhos</h2>
+        </header>
+    	<div class="w3-display-container w3-padding-16" style="height: 300px;">
+    		<div class="w3-display-middle">
+	    		<p class="w3-button w3-black" style="margin-left: auto; margin-right: auto" onclick="l2ex4()">Iniciar</p>
+    		</div>
+    	</div>
+    	<footer class="w3-container w3-black">
+    		<p></p>
+      	</footer>
+    </div>
+</div>
+<!-- Lista 2 ex5 -->
+<div id="l2ex5" class="w3-modal">
+    <div class="w3-modal-content w3-card-3 w3-animate-bottom">
+        <header class="w3-container w3-black"> 
+        	<span onclick="document.getElementById(currentModal).style.display='none'" 
+        	class="w3-button w3-display-topright">&times;</span>
+        	<h2>Fatorial</h2>
+        </header>
+    	<div class="w3-display-container w3-padding-16" style="height: 300px;">
+    		<div class="w3-display-middle">
+	    		<label class="w3-opacity-min">Digite um número: </label><input type="number" id="entradaFatorial" min="1">
+	    		<p id="saidaFatorial">Fatorial: </p>
+	    		<p class="w3-button w3-black" style="margin-left: auto; margin-right: auto" onclick="l2ex5()">Verificar</p>
+    		</div>
+    	</div>
+    	<footer class="w3-container w3-black">
+    		<p></p>
+      	</footer>
+    </div>
+</div>
+<!-- Lista 3 ex1 -->
+<div id="l3ex1" class="w3-modal">
+    <div class="w3-modal-content w3-card-3 w3-animate-bottom">
+        <header class="w3-container w3-black"> 
+        	<span onclick="document.getElementById(currentModal).style.display='none'" 
+        	class="w3-button w3-display-topright">&times;</span>
+        	<h2>Positivos e Negativos</h2>
+        </header>
+    	<div class="w3-display-container w3-padding-16" style="height: 300px;">
+    		<div class="w3-display-middle">
+	    		<p class="w3-button w3-black" style="margin-left: auto; margin-right: auto" onclick="l3ex1()">Iniciar</p>
+    			<p id="saidaPos">Positivos: </p>
+    			<p id="saidaNeg">Negativos: </p>
+    		</div>
+    	</div>
+    	<footer class="w3-container w3-black">
+    		<p></p>
+      	</footer>
+    </div>
+</div>
+<!-- Lista 3 ex2 -->
+<div id="l3ex2" class="w3-modal">
+    <div class="w3-modal-content w3-card-3 w3-animate-bottom">
+        <header class="w3-container w3-black"> 
+        	<span onclick="document.getElementById(currentModal).style.display='none'" 
+        	class="w3-button w3-display-topright">&times;</span>
+        	<h2>Números Maiores que 50</h2>
+        </header>
+    	<div class="w3-display-container w3-padding-16" style="height: 300px;">
+    		<div class="w3-display-middle">
+	    		<p class="w3-button w3-black" style="margin-left: auto; margin-right: auto" onclick="l3ex2()">Iniciar</p>
+	    		<p id="saidaMaior50"></p>
+    		</div>
+    	</div>
+    	<footer class="w3-container w3-black">
+    		<p></p>
+      	</footer>
+    </div>
+</div>
+<!-- Lista 3 ex3 -->
+<div id="l3ex3" class="w3-modal">
+    <div class="w3-modal-content w3-card-3 w3-animate-bottom">
+        <header class="w3-container w3-black"> 
+        	<span onclick="document.getElementById(currentModal).style.display='none'" 
+        	class="w3-button w3-display-topright">&times;</span>
+        	<h2>Números Pares e Ímpares</h2>
+        </header>
+    	<div class="w3-display-container w3-padding-16" style="height: 300px;">
+    		<div class="w3-display-middle">
+	    		<p class="w3-button w3-black" style="margin-left: auto; margin-right: auto" onclick="l3ex3()">Iniciar</p>>
+	    		<p id="saidaPar"></p>
+    			<p id="saidaImpar"></p>
+    		</div>
+    	</div>
+    	<footer class="w3-container w3-black">
+    		<p></p>
+      	</footer>
+    </div>
+</div>
+<!-- Lista 3 ex4 -->
+<div id="l3ex4" class="w3-modal">
+    <div class="w3-modal-content w3-card-3 w3-animate-bottom">
+        <header class="w3-container w3-black"> 
+        	<span onclick="document.getElementById(currentModal).style.display='none'" 
+        	class="w3-button w3-display-topright">&times;</span>
+        	<h2>Ordenando Vetores</h2>
+        </header>
+    	<div class="w3-display-container w3-padding-16" style="height: 300px;">
+    		<div class="w3-display-middle">
+	    		<p class="w3-button w3-black" style="margin-left: auto; margin-right: auto" onclick="l3ex4()">Iniciar</p>
+	    		<p id="saidaOrdemVetor"></p>
+    		</div>
+    	</div>
+    	<footer class="w3-container w3-black">
+    		<p></p>
+      	</footer>
+    </div>
+</div>
+<!-- Lista 3 ex5 -->
+<div id="l3ex5" class="w3-modal">
+    <div class="w3-modal-content w3-card-3 w3-animate-bottom">
+        <header class="w3-container w3-black"> 
+        	<span onclick="document.getElementById(currentModal).style.display='none'" 
+        	class="w3-button w3-display-topright">&times;</span>
+        	<h2>Números Iguais ao Último</h2>
+        </header>
+    	<div class="w3-display-container w3-padding-16" style="height: 300px;">
+    		<div class="w3-display-middle">
+	    		<p class="w3-button w3-black" style="margin-left: auto; margin-right: auto" onclick="l3ex5()">Iniciar</p>
+	    		<p id="saidaIguaisAoUltimo"></p>
+    		</div>
+    	</div>
+    	<footer class="w3-container w3-black">
+    		<p></p>
+      	</footer>
+    </div>
+</div>
+<footer>
+	<p>Desenvolvido por Guilherme França</p>
+</footer>
+</body>
+</html>

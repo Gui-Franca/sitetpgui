@@ -1,0 +1,111 @@
+body {font-family: "Lato", sans-serif}
+
+html{
+	scroll-behavior: smooth;
+}
+input{
+	border-style: none;
+	border-bottom-style: ridge;
+	margin-left: 4px;
+	border-radius: 1px;
+}
+footer{
+	background-color: black;
+	color: white;
+	width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    position: fixed;
+    font-size: 12px;
+}
+
+.controlSection{
+	padding: 8px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+#exercises{
+	padding-bottom: 32px;
+	padding-top: 32px;
+}
+.exercisesColumn{
+	margin-bottom: 16px;
+}
+.exercisesBox{
+	background-color: #f5f5f0;
+	padding: 0px;
+	height: 185px;
+}
+.exercisesTitle{
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
+	background-color: black;
+	color: white;
+}
+.view{
+	cursor: pointer;
+	width: 100%;
+	background-color: black;
+	color: white;
+	height: 20%;
+	text-align: center;
+	padding-top: 2.5%;
+}
+.view:hover{
+	background-color: grey;
+	color: black;
+}
+
+/* -- Resposividade --
+	- Celular
+	- PC
+	- Tablet
+*/
+@media screen and (max-width: 600px) {
+    .exercisesColumn{
+        width: 100%;
+        margin-left: 0px; 
+    }
+    .controlSection{
+    	width: 100%;
+    }
+    .controlSection:active{
+		background-color: #262626;
+		color: white;
+	}
+}
+@media screen and (min-width: 1026px) {
+    .exercisesColumn{
+        display: inline-block;
+        width: 18.5%;
+        margin-left: 10px;
+    } 
+    .controlSection{
+    	display: inline-block;
+    	width: 49%;    	
+    }
+    .controlSection:hover{
+		background-color: black;
+		color: white;
+	}
+	.controlSection:active{
+		background-color: #262626;
+		color: white;
+	}
+}
+@media screen and (min-width: 601px){
+	@media screen and (max-width: 1025px){
+		.exercisesColumn{
+	        display: inline-block;
+	        width: 47%;
+	        margin-left: 10px;
+    	} 
+    	.controlSection{
+    		display: inline-block;
+    		width: 49%;    	
+    	}	
+	}    
+}
